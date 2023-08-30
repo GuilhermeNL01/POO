@@ -2,11 +2,13 @@ package atividade3;
 
 import java.util.Scanner;
 
+// Classe principal que interage com o usuário
 public class SistemaGerenciamentoEstoque {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Estoque estoque = new Estoque();
 
+        // Loop de interação com o usuário
         while (true) {
             System.out.println("\nMenu:");
             System.out.println("1. Adicionar item");
@@ -18,6 +20,7 @@ public class SistemaGerenciamentoEstoque {
             int escolha = scanner.nextInt();
             scanner.nextLine(); // Consumir a quebra de linha após a leitura do número
 
+            // Manipulação das opções do menu
             switch (escolha) {
                 case 1:
                     System.out.print("Digite o nome do item: ");
